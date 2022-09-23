@@ -18,6 +18,17 @@
 
 <body class="body">
 
+    {% block body %}
+    <div class =  "conteudo">
+        Teste de leitura<br>
+        {% for c in usuario %}
+             {{c.nome}}<br>      
+         {% endfor %}
+      </div>
+
+      {% endblock %}
+    
+
     <!--menu-->
 
     <nav>
@@ -76,7 +87,6 @@
     <div class="div-produto" id="q6">
         <img src="https://torcedorfanaticostore.com/wp-content/uploads/2020/11/B2FC64CF-41F1-45BE-993D-E9F69C988CB7.png">
     </div>
-    
 
     <!--Rodapé-->
 
